@@ -301,9 +301,35 @@ section{padding:96px 0;}
 }
 
 /* Conserva la distribución asimétrica del Bento Box */
-.gallery-grid .g-item:nth-child(1){ grid-column: span 2; grid-row: span 2; }
-.gallery-grid .g-item:nth-child(4){ grid-row: span 2; }
-.gallery-grid .g-item:nth-child(6){ grid-column: span 2; }
+/* 1. Taza — centrar un poco más arriba para no cortar el mug */
+.g-item:nth-child(1) .swiper-slide img {
+  object-position: center 35%;
+}
+
+/* 2. Gorra */
+.g-item:nth-child(2) .swiper-slide img {
+  object-position: center center;
+}
+
+/* 3. Camiseta (Stranger Things) — priorizar el diseño, no los bordes */
+.g-item:nth-child(3) .swiper-slide img {
+  object-position: center 30%;
+}
+
+/* 4. Aretes — cuando pongas la imagen real */
+.g-item:nth-child(4) .swiper-slide img {
+  object-position: center center;
+}
+
+/* 5. Saco/Hoodie — mostrar bien los diseños del frente */
+.g-item:nth-child(5) .swiper-slide img {
+  object-position: center 20%;
+}
+
+/* 6. Lote empresarial — mostrar el logo y las camisas */
+.g-item:nth-child(6) .swiper-slide img {
+  object-position: center 40%;
+}
 
 .g-item {
   position: relative; 
@@ -349,7 +375,30 @@ section{padding:96px 0;}
   font-weight: 600;
   opacity: 0.9;
 }
+/* ===== AJUSTES MÍNIMOS PARA FIX DE FOTOS Y SWIPER ===== */
 
+/* 1. Forzar a que Swiper ocupe todo el alto de la tarjeta */
+.g-item .swiper, 
+.g-item .swiper-wrapper, 
+.g-item .swiper-slide {
+  width: 100%;
+  height: 100%;
+}
+
+/* 2. Asegurar que las imágenes se vean completas dentro de cada slide */
+.g-item .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+/* 3. Asegurar que el texto TAZA, ARETES, etc., quede arriba de la foto */
+.g-item .label {
+  z-index: 10;
+  pointer-events: none;
+}
 /* ===== TESTIMONIALS ===== */
 .testi-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:36px;}
 .testi{
@@ -394,17 +443,41 @@ footer ul li a:hover{color:var(--gold-deep);}
   font-size:12px; color:var(--text-muted);
 }
 
-/* ===== WHATSAPP FLOAT ===== */
-.wa-float{
-  position:fixed; bottom:26px; right:26px; z-index:90;
-  width:56px; height:56px; border-radius:50%;
-  background:linear-gradient(135deg, var(--gold-light), var(--gold-deep));
-  display:flex; align-items:center; justify-content:center;
-  box-shadow:0 8px 24px rgba(0,0,0,0.25);
-  transition:transform .25s ease;
+/* ===== CONTENEDOR FLOTANTE EN HORIZONTAL ===== */
+.social-float-container {
+  position: fixed;
+  bottom: 83px;
+  right: 26px;
+  z-index: 90;
+  display: flex;
+  flex-direction: row; /* Pone los botones en fila horizontal */
+  gap: 12px;           /* Separación entre cada botón */
 }
-.wa-float:hover{transform:scale(1.08);}
-.wa-float svg{width:26px; height:26px; fill:var(--ink);}
+
+/* ===== BOTONES DORADOS ===== */
+.social-float {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--gold-light), var(--gold-deep));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+  transition: transform .25s ease;
+}
+
+/* Animación al pasar el mouse */
+.social-float:hover {
+  transform: scale(1.08);
+}
+
+/* Color e ícono SVG interno */
+.social-float svg {
+  width: 26px;
+  height: 26px;
+  fill: var(--ink);
+}
 
 /* reveal on scroll */
 .reveal{opacity:0; transform:translateY(24px); transition:opacity .7s ease, transform .7s ease;}
@@ -452,4 +525,8 @@ footer ul li a:hover{color:var(--gold-deep);}
   to {
     stroke-dashoffset: 0;
   }
+}
+.g-item:hover .swiper-slide img {
+  object-fit: contain;
+  background: #0e0c09;
 }
