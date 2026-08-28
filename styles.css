@@ -473,10 +473,15 @@ footer ul li a:hover{color:var(--gold-deep);}
 }
 
 /* Color e ícono SVG interno */
+/* Color e ícono SVG interno (Fix para GitHub Pages) */
 .social-float svg {
   width: 26px;
   height: 26px;
-  fill: var(--ink);
+  display: block;
+}
+
+.social-float svg path {
+  fill: var(--ink) !important;
 }
 
 /* reveal on scroll */
