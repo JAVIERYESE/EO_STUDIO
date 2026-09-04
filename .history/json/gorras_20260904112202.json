@@ -1,0 +1,13 @@
+{
+  "gorras-madre": {
+    "nombre": "Gorras Día de la Madre",
+    "categoria": "Gorras",
+    "fotos": [
+      { "id": "GOR-01", "src": "imagenes/gorras/Gorras_dia_de_la_madre/PACK GORRAS 8M (1).jpg", "titulo": "Diseño Madre 01" },
+      { "id": "GOR-02", "src": "imagenes/gorras/Gorras_dia_de_la_madre/PACK GORRAS 8M (2).jpg", "titulo": "Diseño Madre 02" },
+      { "id": "GOR-03", "src": "imagenes/gorras/Gorras_dia_de_la_madre/PACK GORRAS 8M (3).jpg", "titulo": "Diseño Madre 03" },
+      { "id": "GOR-04", "src": "imagenes/gorras/Gorras_dia_de_la_madre/PACK GORRAS 8M (4).jpg", "titulo": "Diseño Madre 04" },
+      { "id": "GOR-05", "src": "imagenes/gorras/Gorras_dia_de_la_madre/PACK GORRAS 8M (5).jpg", "titulo": "Diseño Madre 05" }
+    ]
+  }
+}

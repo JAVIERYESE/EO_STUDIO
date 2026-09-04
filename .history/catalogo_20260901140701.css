@@ -1,0 +1,534 @@
+/* ===== HERO DISEÑOS (versión compacta del hero principal) ===== */
+.disenos-hero{
+  padding:150px 0 60px;
+  text-align:left;
+}
+.disenos-hero h1{
+  font-size:clamp(32px, 4.4vw, 52px);
+  line-height:1.12;
+  color:var(--ivory);
+  max-width:760px;
+  margin-bottom:18px;
+}
+.disenos-hero h1 em{
+  font-style:italic;
+  background:linear-gradient(90deg, var(--gold-light), var(--gold));
+  -webkit-background-clip:text; background-clip:text; color:transparent;
+}
+.disenos-hero .lead{
+  font-size:16.5px; color:#cfc7b4; max-width:520px; margin-bottom:0;
+}
+
+/* current nav link indicator */
+.nav-links a.is-current{color:var(--gold-deep);}
+.nav-links a.is-current::after{transform:scaleX(1); background:var(--gold-deep);}
+
+/* ===== FILTROS ===== */
+.filtros-section{
+  padding:44px 0 8px;
+  background:var(--ivory);
+  position:sticky;
+  top:72px;
+  z-index:40;
+  border-bottom:1px solid var(--line);
+}
+.filtro-grupo{
+  display:flex;
+  align-items:center;
+  gap:16px;
+  flex-wrap:wrap;
+  margin-bottom:16px;
+}
+.filtro-label{
+  font-size:12px;
+  letter-spacing:0.14em;
+  text-transform:uppercase;
+  color:var(--gold-deep);
+  font-weight:500;
+  min-width:78px;
+}
+.filtro-chips{display:flex; gap:10px; flex-wrap:wrap;}
+.chip{
+  font-family:'Jost', sans-serif;
+  font-size:13px;
+  letter-spacing:0.02em;
+  padding:8px 18px;
+  border:1px solid var(--line);
+  border-radius:999px;
+  background:transparent;
+  color:var(--text);
+  cursor:pointer;
+  transition:all .2s ease;
+}
+.chip:hover{border-color:var(--gold);}
+.chip.is-active{
+  background:var(--ink);
+  border-color:var(--ink);
+  color:var(--gold-light);
+}
+.filtro-buscador{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  border:1px solid var(--line);
+  border-radius:999px;
+  padding:10px 18px;
+  max-width:340px;
+  margin:20px 0 24px;
+  background:#fff;
+}
+.filtro-buscador svg{width:17px; height:17px; color:var(--gold-deep); flex-shrink:0;}
+.filtro-buscador input{
+  border:none; outline:none; background:transparent;
+  font-family:'Jost', sans-serif; font-size:14px; color:var(--text);
+  width:100%;
+}
+.filtro-buscador input::placeholder{color:var(--text-muted);}
+
+/* ===== GRID DE DISEÑOS ===== */
+.disenos-section{padding:44px 0 96px;}
+.contador{
+  font-size:13px;
+  color:var(--text-muted);
+  letter-spacing:0.03em;
+  margin-bottom:28px;
+}
+.contador #contador-num{color:var(--gold-deep); font-weight:500;}
+
+.disenos-grid{
+  display:grid;
+  grid-template-columns:repeat(4, 1fr);
+  gap:22px;
+}
+.diseno-card{
+  background:var(--ivory);
+  border:1.5px solid var(--gold);
+  border-radius:16px;
+  overflow:hidden;
+  box-shadow:0 8px 20px rgba(0,0,0,0.06);
+  transition:all .3s ease;
+  display:flex;
+  flex-direction:column;
+}
+.diseno-card:hover{
+  transform:translateY(-6px);
+  border-color:var(--gold-deep);
+  box-shadow:0 16px 30px rgba(0,0,0,0.12), 0 0 12px rgba(201,162,39,0.3);
+}
+.diseno-img{
+  position:relative;
+  aspect-ratio:1/1;
+  background:linear-gradient(135deg, var(--ink) 0%, #2a251d 60%, var(--ink) 100%);
+  overflow:hidden;
+}
+.diseno-img img{
+  width:100%; height:100%; object-fit:cover;
+  transition:transform .4s ease;
+}
+.diseno-card:hover .diseno-img img{transform:scale(1.05);}
+.badge-tecnica{
+  position:absolute; top:12px; left:12px;
+  background:rgba(20,18,16,0.78);
+  color:var(--gold-light);
+  font-size:10.5px;
+  letter-spacing:0.06em;
+  text-transform:uppercase;
+  padding:5px 10px;
+  border-radius:999px;
+  border:1px solid rgba(201,162,39,0.4);
+}
+.diseno-info{
+  padding:18px 18px 20px;
+  display:flex;
+  flex-direction:column;
+  gap:8px;
+  flex-grow:1;
+}
+.diseno-cat{
+  font-size:11px;
+  letter-spacing:0.1em;
+  text-transform:uppercase;
+  color:var(--gold-deep);
+}
+.diseno-info h3{
+  font-size:16px;
+  line-height:1.3;
+  margin-bottom:6px;
+}
+.btn-sm{
+  padding:9px 16px;
+  font-size:11.5px;
+  margin-top:auto;
+  justify-content:center;
+  width:100%;
+}
+
+.sin-resultados{
+  display:block;
+  text-align:center;
+  padding:60px 20px;
+  color:var(--text-muted);
+  font-size:15px;
+}
+.sin-resultados a{color:var(--gold-deep); text-decoration:underline;}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width:900px){
+  .disenos-grid{grid-template-columns:repeat(2, 1fr);}
+  .filtros-section{position:static;}
+  .filtro-label{min-width:100%; margin-bottom:2px;}
+}
+@media (max-width:520px){
+  .disenos-grid{grid-template-columns:1fr 1fr; gap:14px;}
+  .diseno-info{padding:14px 12px 16px;}
+  .diseno-info h3{font-size:14px;}
+  .filtro-buscador{max-width:100%;}
+}
+
+/* =====contenedor infinito === */
+
+.mini-infinity-container {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* Tamaño del Lottie */
+.mini-infinity-container lottie-player {
+  width: 120px;
+  height: 60px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Estilo del texto debajo del infinito */
+.mini-infinity-tag {
+  margin-top: 8px;
+  width: 100%;
+}
+
+.mini-infinity-tag span {
+  display: block;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  color:var(--gold-light);
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+
+/* ==========================================================================
+  VISTA DE TARJETAS DE FRANQUICIAS Y GALERÍA DESPLEGABLE
+   mugs.htmlmugs.html========================================================================== */
+
+/* Grilla de Portadas de Franquicias (Mismo diseño que .diseno-card) */
+.grid-franquicias {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+  margin-top: 24px;
+}
+
+.card-franquicia {
+  background: var(--ivory);
+  border: 1.5px solid var(--gold);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+  transition: all .3s ease;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.card-franquicia:hover {
+  transform: translateY(-6px);
+  border-color: var(--gold-deep);
+  box-shadow: 0 16px 30px rgba(0,0,0,0.12), 0 0 12px rgba(201,162,39,0.3);
+}
+
+.card-franquicia-img {
+  position: relative;
+  aspect-ratio: 1/1;
+  background: linear-gradient(135deg, var(--ink) 0%, #2a251d 60%, var(--ink) 100%);
+  overflow: hidden;
+}
+
+.card-franquicia-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .4s ease;
+}
+
+.card-franquicia:hover .card-franquicia-img img {
+  transform: scale(1.05);
+}
+
+.card-franquicia-info {
+  padding: 18px 18px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+}
+
+.card-franquicia-info h3 {
+  font-size: 16px;
+  line-height: 1.3;
+  margin: 0;
+  color: var(--ink);
+}
+
+.card-franquicia-info span {
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gold-deep);
+  font-weight: 500;
+}
+
+/* Encabezado y botón volver de la Capa B */
+.bar-header-galeria {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--line);
+}
+
+.btn-volver-franquicias {
+  font-family: 'Jost', sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.02em;
+  padding: 8px 18px;
+  border: 1px solid var(--gold-deep);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--gold-deep);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all .2s ease;
+}
+
+.btn-volver-franquicias:hover {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: var(--gold-light);
+}
+
+/* Adaptación responsive para las franquicias */
+@media (max-width: 900px) {
+  .grid-franquicias { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 520px) {
+  .grid-franquicias { grid-template-columns: repeat(2, 1fr); gap: 14px; }
+  .card-franquicia-info { padding: 14px 12px 16px; }
+  .card-franquicia-info h3 { font-size: 14px; }
+}
+
+/* ===== BARRA DE BÚSQUEDA INTEGRADA Y CENTRADA ===== */
+.buscador-bar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  max-width: 680px;
+  margin: 10px auto 30px auto;
+  flex-wrap: wrap;
+}
+
+.filtro-buscador {
+  flex: 1;
+  min-width: 260px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1.5px solid var(--gold);
+  border-radius: 999px;
+  padding: 8px 18px;
+  background: var(--ivory-2);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+  margin: 0 !important;
+}
+
+.filtro-buscador svg {
+  width: 18px;
+  height: 18px;
+  stroke: var(--gold-deep);
+  flex-shrink: 0;
+}
+
+.filtro-buscador input {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-family: 'Jost', sans-serif;
+  color: var(--text);
+  width: 100%;
+}
+
+.contador-badge {
+  font-size: 13px;
+  color: var(--text-muted);
+  background: var(--ivory-2);
+  padding: 8px 16px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  white-space: nowrap;
+}
+
+.contador-badge b {
+  color: var(--gold-deep);
+}
+
+.sin-resultados {
+  text-align: center;
+  padding: 30px 20px;
+  color: var(--text-muted);
+  font-size: 14.5px;
+}
+
+/* ===== VISOR MODAL (ENFOCADO EN LA IMAGEN) ===== */
+.modal-visor {
+  position: fixed;
+  inset: 0;
+  background: rgba(10, 8, 7, 0.92);
+  backdrop-filter: blur(8px);
+  z-index: 2000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.modal-visor.is-active {
+  display: flex;
+}
+
+.modal-contenido {
+  background: var(--ivory);
+  border: 1.5px solid var(--gold);
+  border-radius: 16px;
+  max-width: 580px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 25px 60px rgba(0,0,0,0.6);
+  display: flex;
+  flex-direction: column; /* Apila imagen arriba, botón abajo */
+}
+
+.modal-cerrar {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: rgba(20, 18, 16, 0.8);
+  color: var(--ivory);
+  border: 1px solid var(--gold);
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all .2s ease;
+}
+
+.modal-cerrar:hover {
+  background: var(--gold);
+  color: var(--ink);
+}
+
+.modal-imagen {
+  width: 100%;
+  max-height: 70vh; /* Da prioridad a la imagen */
+  background: var(--ink);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-imagen img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Muestra el diseño completo sin recortes */
+}
+
+.modal-detalles {
+  width: 100%;
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Título a la izquierda, botón a la derecha */
+  gap: 16px;
+  background: var(--ivory);
+  border-top: 1px solid rgba(197, 160, 89, 0.3);
+}
+
+.modal-detalles .eyebrow {
+  display: none; /* Oculta el texto "Tazas y Mugs" sobrante */
+}
+
+.modal-detalles h3 {
+  font-size: 16px;
+  margin: 0;
+  color: var(--ink);
+}
+
+.modal-detalles .btn {
+  padding: 10px 20px;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+@media (max-width: 480px) {
+  .modal-detalles {
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+  }
+}
+/* ===== FOOTER COMPACTO (FONDO CLARO ORIGINAL) ===== */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main.disenos-section {
+  flex: 1; /* Empuja el footer al fondo de la pantalla de forma limpia */
+}
+
+footer {
+  padding: 20px 0 !important;
+  background: transparent !important; /* Conserva el color crema/marfil de la web */
+  border-top: 1px solid rgba(197, 160, 89, 0.3) !important; /* Línea dorada sutil */
+  margin-top: auto;
+}
+
+.foot-bottom {
+  padding: 0 !important;
+  margin: 0 !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.foot-bottom span,
+.foot-bottom a {
+  color: #1a1a1a !important; /* Mantiene el texto oscuro legible */
+  font-size: 14px;
+}

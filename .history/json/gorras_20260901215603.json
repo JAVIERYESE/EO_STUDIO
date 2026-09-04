@@ -1,0 +1,9 @@
+{
+  "anime": {
+    "nombre": "Colección Anime",
+    "categoria": "Gorras",
+    "fotos": [
+      { "id": "GOR-01", "src": "imagenes/gorras/Anime/01.png", "titulo": "Gorra Goku — 01" }
+    ]
+  }
+}

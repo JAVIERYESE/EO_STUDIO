@@ -170,7 +170,7 @@ header.is-scrolled{
   margin: 0 auto;
 }
  
-.infinity-wrap lottie-player {
+lottie-player {
   width: 100%;
   max-width: 320px;
   display: block;

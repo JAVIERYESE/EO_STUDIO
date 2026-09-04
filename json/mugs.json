@@ -1,0 +1,81 @@
+{
+  "stranger-things": {
+    "nombre": "Stranger Things",
+    "categoria": "Tazas y Mugs",
+    "fotos": [
+      { "id": "ST-01", "src": "imagenes/mugs/Stranger_Things/01.png", "titulo": "Stranger Things — 01" },
+      { "id": "ST-02", "src": "imagenes/mugs/Stranger_Things/02.png", "titulo": "Stranger Things — 02" },
+      { "id": "ST-03", "src": "imagenes/mugs/Stranger_Things/03.png", "titulo": "Stranger Things — 03" },
+      { "id": "ST-04", "src": "imagenes/mugs/Stranger_Things/04.png", "titulo": "Stranger Things — 04" },
+      { "id": "ST-05", "src": "imagenes/mugs/Stranger_Things/05.png", "titulo": "Stranger Things — 05" },
+      { "id": "ST-06", "src": "imagenes/mugs/Stranger_Things/06.png", "titulo": "Stranger Things — 06" },
+      { "id": "ST-07", "src": "imagenes/mugs/Stranger_Things/07.png", "titulo": "Stranger Things — 07" },
+      { "id": "ST-08", "src": "imagenes/mugs/Stranger_Things/08.png", "titulo": "Stranger Things — 08" },
+      { "id": "ST-09", "src": "imagenes/mugs/Stranger_Things/09.png", "titulo": "Stranger Things — 09" },
+      { "id": "ST-10", "src": "imagenes/mugs/Stranger_Things/10.png", "titulo": "Stranger Things — 10" }
+    ]
+  },
+
+  "mario_bross": {
+      "nombre": "Mario Bros",
+      "categoria": "Tazas y Mugs",
+      "fotos": [
+        { "id": "MB-01", "src": "imagenes/mugs/mario_bross/Mug_Mockup_1.png", "titulo": "Mario Bros – 01" },
+        { "id": "MB-02", "src": "imagenes/mugs/mario_bross/Mug_Mockup_2.png", "titulo": "Mario Bros – 02" },
+        { "id": "MB-03", "src": "imagenes/mugs/mario_bross/Mug_Mockup_3.png", "titulo": "Mario Bros – 03" },
+        { "id": "MB-04", "src": "imagenes/mugs/mario_bross/Mug_Mockup_4.png", "titulo": "Mario Bros – 04" },
+        { "id": "MB-05", "src": "imagenes/mugs/mario_bross/Mug_Mockup_5.png", "titulo": "Mario Bros – 05" },
+        { "id": "MB-06", "src": "imagenes/mugs/mario_bross/Mug_Mockup_6.png", "titulo": "Mario Bros – 06" },
+        { "id": "MB-07", "src": "imagenes/mugs/mario_bross/Mug_Mockup_7.png", "titulo": "Mario Bros – 07" },
+        { "id": "MB-08", "src": "imagenes/mugs/mario_bross/Mug_Mockup_8.png", "titulo": "Mario Bros – 08" },
+        { "id": "MB-09", "src": "imagenes/mugs/mario_bross/Mug_Mockup_9.png", "titulo": "Mario Bros – 09" },
+        { "id": "MB-10", "src": "imagenes/mugs/mario_bross/Mug_Mockup_10.png", "titulo": "Mario Bros – 10" },
+        { "id": "MB-11", "src": "imagenes/mugs/mario_bross/Mug_Mockup_11.png", "titulo": "Mario Bros – 11" },
+        { "id": "MB-12", "src": "imagenes/mugs/mario_bross/Mug_Mockup_12.png", "titulo": "Mario Bros – 12" },
+        { "id": "MB-13", "src": "imagenes/mugs/mario_bross/Mug_Mockup_13.png", "titulo": "Mario Bros – 13" },
+        { "id": "MB-14", "src": "imagenes/mugs/mario_bross/Mug_Mockup_14.png", "titulo": "Mario Bros – 14" },
+        { "id": "MB-15", "src": "imagenes/mugs/mario_bross/Mug_Mockup_15.png", "titulo": "Mario Bros – 15" },
+        { "id": "MB-16", "src": "imagenes/mugs/mario_bross/Mug_Mockup_16.png", "titulo": "Mario Bros – 16" },
+        { "id": "MB-17", "src": "imagenes/mugs/mario_bross/Mug_Mockup_17.png", "titulo": "Mario Bros – 17" },
+        { "id": "MB-18", "src": "imagenes/mugs/mario_bross/Mug_Mockup_18.png", "titulo": "Mario Bros – 18" },
+        { "id": "MB-19", "src": "imagenes/mugs/mario_bross/Mug_Mockup_19.png", "titulo": "Mario Bros – 19" },
+        { "id": "MB-20", "src": "imagenes/mugs/mario_bross/Mug_Mockup_20.png", "titulo": "Mario Bros – 20" }
+      ]
+    },
+
+    "naruto": {
+        "nombre": "Naruto",
+        "categoria": "Tazas y Mugs",
+        "fotos": [
+          { "id": "MUG-NAR-01", "src": "imagenes/mugs/naruto/MUESTRAS (1).jpg", "titulo": "Naruto – 01" },
+          { "id": "MUG-NAR-02", "src": "imagenes/mugs/naruto/MUESTRAS (2).jpg", "titulo": "Naruto – 02" },
+          { "id": "MUG-NAR-03", "src": "imagenes/mugs/naruto/MUESTRAS (3).jpg", "titulo": "Naruto – 03" },
+          { "id": "MUG-NAR-04", "src": "imagenes/mugs/naruto/MUESTRAS (4).jpg", "titulo": "Naruto – 04" },
+          { "id": "MUG-NAR-05", "src": "imagenes/mugs/naruto/MUESTRAS (5).jpg", "titulo": "Naruto – 05" },
+          { "id": "MUG-NAR-06", "src": "imagenes/mugs/naruto/MUESTRAS (6).jpg", "titulo": "Naruto – 06" },
+          { "id": "MUG-NAR-07", "src": "imagenes/mugs/naruto/MUESTRAS (7).jpg", "titulo": "Naruto – 07" },
+          { "id": "MUG-NAR-08", "src": "imagenes/mugs/naruto/MUESTRAS (8).jpg", "titulo": "Naruto – 08" },
+          { "id": "MUG-NAR-09", "src": "imagenes/mugs/naruto/MUESTRAS (9).jpg", "titulo": "Naruto – 09" },
+          { "id": "MUG-NAR-10", "src": "imagenes/mugs/naruto/MUESTRAS (10).jpg", "titulo": "Naruto – 10" },
+          { "id": "MUG-NAR-11", "src": "imagenes/mugs/naruto/MUESTRAS (11).jpg", "titulo": "Naruto – 11" },
+          { "id": "MUG-NAR-12", "src": "imagenes/mugs/naruto/MUESTRAS (12).jpg", "titulo": "Naruto – 12" },
+          { "id": "MUG-NAR-13", "src": "imagenes/mugs/naruto/MUESTRAS (13).jpg", "titulo": "Naruto – 13" },
+          { "id": "MUG-NAR-14", "src": "imagenes/mugs/naruto/MUESTRAS (14).jpg", "titulo": "Naruto – 14" },
+          { "id": "MUG-NAR-15", "src": "imagenes/mugs/naruto/MUESTRAS (15).jpg", "titulo": "Naruto – 15" },
+          { "id": "MUG-NAR-16", "src": "imagenes/mugs/naruto/MUESTRAS (16).jpg", "titulo": "Naruto – 16" },
+          { "id": "MUG-NAR-17", "src": "imagenes/mugs/naruto/MUESTRAS (17).jpg", "titulo": "Naruto – 17" },
+          { "id": "MUG-NAR-18", "src": "imagenes/mugs/naruto/MUESTRAS (18).jpg", "titulo": "Naruto – 18" },
+          { "id": "MUG-NAR-19", "src": "imagenes/mugs/naruto/MUESTRAS (19).jpg", "titulo": "Naruto – 19" },
+          { "id": "MUG-NAR-20", "src": "imagenes/mugs/naruto/MUESTRAS (20).jpg", "titulo": "Naruto – 20" },
+          { "id": "MUG-NAR-21", "src": "imagenes/mugs/naruto/MUESTRAS (21).jpg", "titulo": "Naruto – 21" },
+          { "id": "MUG-NAR-22", "src": "imagenes/mugs/naruto/MUESTRAS (22).jpg", "titulo": "Naruto – 22" },
+          { "id": "MUG-NAR-23", "src": "imagenes/mugs/naruto/MUESTRAS (23).jpg", "titulo": "Naruto – 23" },
+          { "id": "MUG-NAR-24", "src": "imagenes/mugs/naruto/MUESTRAS (24).jpg", "titulo": "Naruto – 24" },
+          { "id": "MUG-NAR-25", "src": "imagenes/mugs/naruto/MUESTRAS (25).jpg", "titulo": "Naruto – 25" },
+          { "id": "MUG-NAR-26", "src": "imagenes/mugs/naruto/MUESTRAS (26).jpg", "titulo": "Naruto – 26" },
+          { "id": "MUG-NAR-27", "src": "imagenes/mugs/naruto/MUESTRAS (27).jpg", "titulo": "Naruto – 27" },
+          { "id": "MUG-NAR-28", "src": "imagenes/mugs/naruto/MUESTRAS (28).jpg", "titulo": "Naruto – 28" }
+        ]
+      }
+  
+}

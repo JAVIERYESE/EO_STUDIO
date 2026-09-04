@@ -9,6 +9,7 @@
   --text:#231F1B;
   --text-muted:#6f6656;
   --line:rgba(201,162,39,0.25);
+  --radius:2px;
 }
 *{box-sizing:border-box; margin:0; padding:0;}
 html{scroll-behavior:smooth;}
@@ -87,7 +88,6 @@ header.is-scrolled{
   display:inline-flex; align-items:center; gap:8px;
   padding:11px 24px;
   border:1px solid var(--ink);
-  border-radius:999px;
   font-size:13px; letter-spacing:0.06em; text-transform:uppercase;
   background:transparent; cursor:pointer;
   transition:all .25s ease;
@@ -131,7 +131,7 @@ header.is-scrolled{
   margin-bottom:22px;
 }
 .hero h1 em{
-  font-style:italic;
+  font-style:italic; color:var(--gold-light);
   background:linear-gradient(90deg, var(--gold-light), var(--gold));
   -webkit-background-clip:text; background-clip:text; color:transparent;
 }
@@ -170,7 +170,7 @@ header.is-scrolled{
   margin: 0 auto;
 }
  
-.infinity-wrap lottie-player {
+lottie-player {
   width: 100%;
   max-width: 320px;
   display: block;
@@ -374,8 +374,6 @@ section{padding:96px 0;}
   text-transform: uppercase; 
   font-weight: 600;
   opacity: 0.9;
-  z-index: 10;
-  pointer-events: none;
 }
 /* ===== AJUSTES MÍNIMOS PARA FIX DE FOTOS Y SWIPER ===== */
 
@@ -396,6 +394,11 @@ section{padding:96px 0;}
   transition: transform 0.4s ease;
 }
 
+/* 3.texto TAZA, ARETES, etc., quede arriba de la foto */
+.g-item .label {
+  z-index: 10;
+  pointer-events: none;
+}
 /* ===== TESTIMONIALS ===== */
 .testi-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:36px;}
 .testi{
@@ -434,8 +437,6 @@ footer ul{list-style:none;}
 footer ul li{margin-bottom:10px;}
 footer ul li a{font-size:13.5px; color:var(--text);}
 footer ul li a:hover{color:var(--gold-deep);}
-
-
 .foot-bottom{
   border-top:1px solid var(--line); padding-top:22px;
   display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px;

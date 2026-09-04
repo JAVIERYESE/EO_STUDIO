@@ -1,0 +1,18 @@
+{
+  "los_simpsons": {
+    "nombre": "Los Simpsons",
+    "categoria": "sacos",
+    "fotos": [
+      { "id": "LS-01", "src": "imagenes/sacos/los_simpsons/saco_bart.jpeg", "titulo": "Los Simpsons – 01" }
+    ]
+  },
+
+  "winnie_the_pooh": {
+      "nombre": "Winnie the Pooh",
+      "categoria": "sacos",
+      "fotos": [
+        { "id": "WP-01", "src": "imagenes/sacos/winnie_pooh/winnie_pooh.jpg", "titulo": "Winnie the Pooh – 01" },
+        { "id": "WP-02", "src": "imagenes/sacos/winnie_pooh/ígor.jpg", "titulo": "Winnie the Pooh – 02" }
+      ]
+    }
+}

@@ -1,0 +1,18 @@
+{
+  "stranger-things": {
+    "nombre": "Stranger Things",
+    "categoria": "Tazas y Mugs",
+    "fotos": [
+      { "id": "ST-01", "src": "imagenes/mugs/Stranger_Things/01.png", "titulo": "Stranger Things — 01" },
+      { "id": "ST-02", "src": "imagenes/mugs/Stranger_Things/02.png", "titulo": "Stranger Things — 02" },
+      { "id": "ST-03", "src": "imagenes/mugs/Stranger_Things/03.png", "titulo": "Stranger Things — 03" }
+    ]
+  },
+  "dragon-ball": {
+    "nombre": "Dragon Ball Z",
+    "categoria": "Tazas y Mugs",
+    "fotos": [
+      { "id": "DB-01", "src": "imagenes/mugs/Dragon_Ball/01.png", "titulo": "Dragon Ball Z — 01" }
+    ]
+  }
+}

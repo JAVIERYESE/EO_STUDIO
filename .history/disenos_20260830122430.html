@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Catálogo de Diseños — EO Studio</title>
+<meta name="description" content="Explora los diseños disponibles en EO Studio para DTF o sublimación: anime, personajes, frases y más.">
+<link rel="icon" type="image/png" href="imagenes/logo-120.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="disenos.css">
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <a class="brand" href="index.html#top">
+      <img src="imagenes/logo-120.png" alt="EO Studio">
+      <span>EO STUDIO</span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html#catalogo">Catálogo</a>
+      <a href="disenos.html" class="is-current">Diseños</a>
+      <a href="index.html#proceso">Cómo funciona</a>
+      <a href="index.html#nosotros">Por qué EO</a>
+      <a href="index.html#contacto">Contacto</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn btn-gold" href="index.html#contacto">Cotizar ahora</a>
+      <button class="menu-toggle" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<!-- ===== HERO DISEÑOS ===== -->
+<section class="hero disenos-hero" id="top">
+  <div class="wrap">
+    <span class="eyebrow hero-eyebrow">Catálogo de diseños</span>
+    <h1>Elige el diseño, <em>nosotros</em> te lo hacemos <em>realidad</em></h1>
+    <p class="lead">En EO Studio convertimos tus ideas en tazas, gorras, camisetas, sacos y aretes con acabados de alta definición. Un solo lugar, cualquier prenda, cualquier cantidad.</p>
+  </div>
+</section>
+
+<div class="mini-infinity-container">
+    <lottie-player
+        src="imagenes/Infinity Symbol.json"
+        background="transparent"
+        speed="0.4"
+        loop
+        autoplay>
+    </lottie-player>
+
+    <div class="mini-infinity-tag">
+        <span>Posibilidades infinitas</span>
+    </div>
+</div>
+<!-- ===== FILTROS ===== -->
+<section class="filtros-section">
+  <div class="wrap">
+
+    <div class="filtro-grupo">
+      <span class="filtro-label">Técnica</span>
+      <div class="filtro-chips" data-filter-group="tecnica">
+        <button class="chip is-active" data-value="todas">Todas</button>
+        <button class="chip" data-value="dtf">DTF</button>
+        <button class="chip" data-value="sublimado">Sublimado</button>
+      </div>
+    </div>
+
+    <div class="filtro-grupo">
+      <span class="filtro-label">Categoría</span>
+      <div class="filtro-chips" data-filter-group="categoria">
+        <button class="chip is-active" data-value="todas">Todas</button>
+        <button class="chip" data-value="anime">Anime</button>
+        <button class="chip" data-value="peliculas-series">Películas y series</button>
+        <button class="chip" data-value="frases">Frases</button>
+      </div>
+    </div>
+
+    <div class="filtro-buscador">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input type="text" id="buscador" placeholder="Buscar diseño, ej. One Piece">
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== GRID DE DISEÑOS ===== -->
+<section class="disenos-section">
+  <div class="wrap">
+
+    <p class="contador"><span id="contador-num">8</span> diseños encontrados</p>
+
+    <div class="disenos-grid" id="disenos-grid">
+
+      <!-- Tarjeta 1 -->
+      <article class="diseno-card" data-tecnica="dtf sublimado" data-categoria="anime" data-nombre="one piece luffy gear 5">
+        <div class="diseno-img">
+          <img src="imagenes/disenos/anime-onepiece-01.jpg" alt="Diseño One Piece - Luffy Gear 5" loading="lazy">
+          <span class="badge-tecnica">DTF · Sublimado</span>
+        </div>
+        <div class="diseno-info">
+          <span class="diseno-cat">Anime</span>
+          <h3>One Piece — Luffy Gear 5</h3>
+          <a class="btn btn-gold btn-sm" href="https://wa.me/573046168524?text=Hola%2C%20me%20interesa%20el%20diseño%20One%20Piece%20-%20Luffy%20Gear%205" target="_blank" rel="noopener">Pedir este diseño</a>
+        </div>
+      </article>
+
+      <!-- Tarjeta 2 -->
+      <article class="diseno-card" data-tecnica="dtf" data-categoria="anime" data-nombre="dragon ball goku ultra instinto">
+        <div class="diseno-img">
+          <img src="imagenes/disenos/anime-dragonball-01.jpg" alt="Diseño Dragon Ball - Goku Ultra Instinto" loading="lazy">
+          <span class="badge-tecnica">DTF</span>
+        </div>
+        <div class="diseno-info">
+          <span class="diseno-cat">Anime</span>
+          <h3>Dragon Ball — Goku Ultra Instinto</h3>
+          <a class="btn btn-gold btn-sm" href="https://wa.me/573046168524?text=Hola%2C%20me%20interesa%20el%20diseño%20Dragon%20Ball%20-%20Goku%20Ultra%20Instinto" target="_blank" rel="noopener">Pedir este diseño</a>
+        </div>
+      </article>
+
+      <!-- Tarjeta 3 -->
+      <article class="diseno-card" data-tecnica="sublimado" data-categoria="peliculas-series" data-nombre="stranger things logo">
+        <div class="diseno-img">
+          <img src="imagenes/disenos/series-strangerthings-01.jpg" alt="Diseño Stranger Things logo" loading="lazy">
+          <span class="badge-tecnica">Sublimado</span>
+        </div>
+        <div class="diseno-info">
+          <span class="diseno-cat">Películas y series</span>
+          <h3>Stranger Things — Logo clásico</h3>
+          <a class="btn btn-gold btn-sm" href="https://wa.me/573046168524?text=Hola%2C%20me%20interesa%20el%20diseño%20Stranger%20Things%20-%20Logo%20clásico" target="_blank" rel="noopener">Pedir este diseño</a>
+        </div>
+      </article>
+
+      <!-- Tarjeta 4 -->
+      <article class="diseno-card" data-tecnica="dtf sublimado" data-categoria="peliculas-series" data-nombre="los simpson bart">
+        <div class="diseno-img">
+          <img src="imagenes/disenos/series-simpson-01.jpg" alt="Diseño Los Simpson - Bart" loading="lazy">
+          <span class="badge-tecnica">DTF · Sublimado</span>
+        </div>
+        <div class="diseno-info">
+          <span class="diseno-cat">Películas y series</span>
+          <h3>Los Simpson — Bart</h3>
+          <a class="btn btn-gold btn-sm" href="https://wa.me/573046168524?text=Hola%2C%20me%20interesa%20el%20diseño%20Los%20Simpson%20-%20Bart" target="_blank" rel="noopener">Pedir este diseño</a>
+        </div>
+      </article>
+
+      <!-- Tarjeta 5 -->
+      <article class="diseno-card" data-tecnica="dtf" data-categoria="frases" data-nombre="frase motivacional cafe">
+        <div class="diseno-img">
+          <img src="imagenes/disenos/frases-cafe-01.jpg" alt="Diseño de frase motivacional con café" loading="lazy">
+          <span class="badge-tecnica">DTF</span>
+        </div>
+        <div class="diseno-info">
+          <span class="diseno-cat">Frases</span>
+          <h3>"Hoy es un buen día" — Tipografía</h3>
+          <a class="btn btn-gold btn-sm" href="https://wa.me/573046168524?text=Hola%2C%20me%20interesa%20el%20diseño%20de%20frase%20-%20Hoy%20es%20un%20buen%20día" target="_blank" rel="noopener">Pedir este diseño</a>
+        </div>
+      </article>
+
+      <!-- Tarjeta 6 -->
+      <article class="diseno-card" data-tecnica="sublimado" data-categoria="anime" data-nombre="naruto sasuke">
+        <div class="diseno-img">
+          <img src="imagenes/disenos/anime-naruto-01.jpg" alt="Diseño Naruto y Sasuke" loading="lazy">
+          <span class="badge-tecnica">Sublimado</span>
+        </div>
+        <div class="diseno-info">
+          <span class="diseno-cat">Anime</span>
+          <h3>Naruto — Naruto &amp; Sasuke</h3>
+          <a class="btn btn-gold btn-sm" href="https://wa.me/573046168524?text=Hola%2C%20me%20interesa%20el%20diseño%20Naruto%20-%20Naruto%20%26%20Sasuke" target="_blank" rel="noopener">Pedir este diseño</a>
+        </div>
+      </article>
+
+      <!-- Tarjeta 7 -->
+      <article class="diseno-card" data-tecnica="dtf" data-categoria="peliculas-series" data-nombre="marvel spiderman">
+        <div class="diseno-img">
+          <img src="imagenes/disenos/peliculas-spiderman-01.jpg" alt="Diseño Marvel Spiderman" loading="lazy">
+          <span class="badge-tecnica">DTF</span>
+        </div>
+        <div class="diseno-info">
+          <span class="diseno-cat">Películas y series</span>
+          <h3>Marvel — Spiderman</h3>
+          <a class="btn btn-gold btn-sm" href="https://wa.me/573046168524?text=Hola%2C%20me%20interesa%20el%20diseño%20Marvel%20-%20Spiderman" target="_blank" rel="noopener">Pedir este diseño</a>
+        </div>
+      </article>
+
+      <!-- Tarjeta 8 -->
+      <article class="diseno-card" data-tecnica="dtf sublimado" data-categoria="frases" data-nombre="frase mama reina">
+        <div class="diseno-img">
+          <img src="imagenes/disenos/frases-mama-01.jpg" alt="Diseño de frase para mamá" loading="lazy">
+          <span class="badge-tecnica">DTF · Sublimado</span>
+        </div>
+        <div class="diseno-info">
+          <span class="diseno-cat">Frases</span>
+          <h3>"Mamá reina" — Corona dorada</h3>
+          <a class="btn btn-gold btn-sm" href="https://wa.me/573046168524?text=Hola%2C%20me%20interesa%20el%20diseño%20de%20frase%20-%20Mamá%20reina" target="_blank" rel="noopener">Pedir este diseño</a>
+        </div>
+      </article>
+
+    </div>
+
+    <p class="sin-resultados" id="sin-resultados" hidden>No encontramos diseños con esos filtros. Prueba con otra técnica o categoría, o <a href="https://wa.me/573046168524?text=Hola%2C%20estoy%20buscando%20un%20diseño%20específico" target="_blank" rel="noopener">pregúntanos directo por WhatsApp</a>.</p>
+
+  </div>
+</section>
+
+<!-- ===== CTA FINAL ===== -->
+<section class="cta">
+  <div class="wrap">
+    <span class="eyebrow eyebrow-light">¿No encuentras tu diseño?</span>
+    <h2>Cuéntanos qué tienes en mente y lo creamos contigo</h2>
+    <p>Envíanos tu idea, personaje o frase — te mostramos el mockup antes de producir.</p>
+    <div class="cta-actions">
+      <a class="btn btn-gold" href="https://wa.me/573046168524" target="_blank" rel="noopener">Escribir por WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-bottom">
+      <span>© 2026 EO Studio. Todos los derechos reservados.</span>
+      <a href="index.html#top">Volver al inicio ↑</a>
+    </div>
+  </div>
+</footer>
+
+<script src="disenos.js"></script>
+</body>
+</html>

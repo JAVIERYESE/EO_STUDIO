@@ -1,0 +1,13 @@
+{
+  "camisetas-batman": {
+    "nombre": "Colección Batman",
+    "categoria": "Camisetas DTF",
+    "fotos": [
+      { "id": "CAM-BAT-01", "src": "imagenes/camisetas_dtf/batman/1.jpg", "titulo": "Batman – 01" },
+      { "id": "CAM-BAT-02", "src": "imagenes/camisetas_dtf/batman/2.jpg", "titulo": "Batman – 02" },
+      { "id": "CAM-BAT-03", "src": "imagenes/camisetas_dtf/batman/3.jpg", "titulo": "Batman – 03" },
+      { "id": "CAM-BAT-04", "src": "imagenes/camisetas_dtf/batman/4.jpg", "titulo": "Batman – 04" },
+      { "id": "CAM-BAT-05", "src": "imagenes/camisetas_dtf/batman/5.jpg", "titulo": "Batman – 05" }
+    ]
+  }
+}
