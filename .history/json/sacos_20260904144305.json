@@ -1,9 +1,0 @@
-{
-  "los_simpsons": {
-    "nombre": "Los Simpsons",
-    "categoria": "sacos",
-    "fotos": [
-      { "id": "LS-01", "src": "imagenes/sacos/los simpsons/saco_bart.jpeg", "titulo": "Los Simpsons – 01" }
-    ]
-  }
-}
