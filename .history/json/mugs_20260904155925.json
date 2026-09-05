@@ -76,14 +76,6 @@
           { "id": "MUG-NAR-27", "src": "imagenes/mugs/naruto/MUESTRAS (27).jpg", "titulo": "Naruto – 27" },
           { "id": "MUG-NAR-28", "src": "imagenes/mugs/naruto/MUESTRAS (28).jpg", "titulo": "Naruto – 28" }
         ]
-      },
-
-     "mugs-simpson": {
-         "nombre": "Mugs Los Simpson",
-         "categoria": "Mugs Sublimados",
-         "fotos": [
-           { "id": "MUG-SIMP-01", "src": "imagenes/mugs/los_simpsons/MOCKUP_TAZAS_03.jpg", "titulo": "Mug Los Simpson – 03" }
-         ]
-       }
+      }
   
 }

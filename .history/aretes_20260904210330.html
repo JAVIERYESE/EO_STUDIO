@@ -80,12 +80,12 @@
       <section id="vista-franquicias">
         <div class="grid-franquicias">
 
-          <!-- TARJETA ARETES CON PARÁMETROS CORREGIDOS -->
-          <article class="card-franquicia" onclick="abrirColeccion('aretes-coleccion', 'Aretes Personalizados', 'json/aretes.json')"> 
-            <div class="card-franquicia-img">
+          <!-- TARJETA ARETES AL ESTÁNDAR DE CAMISETAS.HTML -->
+          <article class="diseno-card" style="cursor: pointer;" onclick="abrirColeccion('aretes-coleccion', 'Aretes Personalizados', 'json/aretes.json')">
+            <div class="diseno-img">
               <img src="imagenes/aretes/arete1.jpeg" alt="Colección Aretes MDF" loading="lazy">
             </div>
-            <div class="card-franquicia-info">
+            <div class="diseno-info">
               <h3>Aretes Personalizados</h3>
               <span>Ver colección</span>
             </div>
@@ -103,7 +103,8 @@
           <h2 id="titulo-franquicia-activa" style="font-size: 24px;">Franquicia</h2>
         </div>
       
-        <div class="disenos-grid" id="disenos-grid-dinamico"></div>
+        <!-- ESTA LÍNEA ES LA CLAVE: Debe tener id="galeria-disenos" -->
+        <div class="disenos-grid" id="galeria-disenos"></div>
       </section>
 
     </div>

@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Catálogo de Aretes — EO Studio</title>
-  <meta name="description" content="Explora todas nuestras colecciones de aretes y accesorios personalizados en EO Studio.">
+  <title>Catálogo de Camisetas — EO Studio</title>
+  <meta name="description" content="Explora todas nuestras colecciones de camisetas personalizadas en EO Studio.">
   <link rel="icon" type="image/png" href="imagenes/logo-120.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,9 +40,9 @@
   <!-- HERO ESTRUCTURADO -->
   <section class="hero disenos-hero" id="top">
     <div class="wrap">
-      <span class="eyebrow hero-eyebrow">Aretes &amp; Accesorios</span>
-      <h1>Colecciones en <em>aretes sublimados</em></h1>
-      <p class="lead">Elige la colección para ver todos los modelos en MDF y acrílico disponibles.</p>
+      <span class="eyebrow hero-eyebrow">Camisetas Personalizadas</span>
+      <h1>Colecciones en <em>DTF y Sublimación</em></h1>
+      <p class="lead">Elige la franquicia para ver todos sus diseños de camisetas disponibles.</p>
     </div>
     <div class="mini-infinity-container">
       <lottie-player src="imagenes/Infinity Symbol.json" background="transparent" speed="0.4" loop autoplay></lottie-player>
@@ -68,7 +68,7 @@
             <circle cx="11" cy="11" r="8"></circle>
             <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
           </svg>
-          <input type="text" id="buscador" placeholder="Buscar modelo o diseño...">
+          <input type="text" id="buscador" placeholder="Buscar personaje o diseño...">
         </div>
       
         <div class="contador-badge">
@@ -80,13 +80,35 @@
       <section id="vista-franquicias">
         <div class="grid-franquicias">
 
-          <!-- TARJETA ARETES CON PARÁMETROS CORREGIDOS -->
-          <article class="card-franquicia" onclick="abrirColeccion('aretes-coleccion', 'Aretes Personalizados', 'json/aretes.json')"> 
-            <div class="card-franquicia-img">
-              <img src="imagenes/aretes/arete1.jpeg" alt="Colección Aretes MDF" loading="lazy">
+          <!-- TARJETA BATMAN -->
+          <article class="diseno-card" style="cursor: pointer;" onclick="abrirColeccion('camisetas-batman', 'Batman', 'json/camisetas_dtf.json')">
+            <div class="diseno-img">
+              <img src="imagenes/camisetas_dtf/batman/_MUESTRAS (3).png" alt="Colección Batman" loading="lazy">
             </div>
-            <div class="card-franquicia-info">
-              <h3>Aretes Personalizados</h3>
+            <div class="diseno-info">
+              <h3>Batman</h3>
+              <span>Ver colección</span>
+            </div>
+          </article>
+
+          <!-- TARJETA DEMON SLAYER -->
+          <article class="diseno-card" style="cursor: pointer;" onclick="abrirColeccion('camisetas-demon-slayer', 'Demon Slayer', 'json/camisetas_dtf.json')">
+            <div class="diseno-img">
+              <img src="imagenes/camisetas_dtf/demon_slayer/MKP 1.jpg" alt="Colección Demon Slayer" loading="lazy">
+            </div>
+            <div class="diseno-info">
+              <h3>Demon Slayer</h3>
+              <span>Ver colección</span>
+            </div>
+          </article>
+
+          <!-- TARJETA CR7 -->
+          <article class="diseno-card" style="cursor: pointer;" onclick="abrirColeccion('camisetas-cr7', 'CR7', 'json/camisetas_dtf.json')">
+            <div class="diseno-img">
+              <img src="imagenes/camisetas_dtf/CR7/mockup (2).jpg" alt="Colección CR7" loading="lazy">
+            </div>
+            <div class="diseno-info">
+              <h3>CR7</h3>
               <span>Ver colección</span>
             </div>
           </article>

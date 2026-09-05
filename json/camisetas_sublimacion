@@ -1,0 +1,10 @@
+ 
+ {
+    "camisetas-caballeros-dorados": {
+        "nombre": "Colección Caballeros Dorados",
+        "categoria": "Camisetas Sublimación",
+        "fotos": [
+        { "id": "SUB-CAB-VIR", "src": "imagenes/camisetas_sublimacion/caballeros_dorados/virgo.jpeg", "titulo": "Caballeros Dorados – Virgo" }
+        ]
+    }
+}

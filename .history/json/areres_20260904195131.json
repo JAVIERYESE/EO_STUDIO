@@ -1,0 +1,8 @@
+"aretes-coleccion": {
+    "nombre": "Colección de Aretes",
+    "categoria": "Accesorios",
+    "fotos": [
+      { "id": "ARE-01", "src": "imagenes/aretes/arete1.jpeg", "titulo": "Arete Personalizado – 01" },
+      { "id": "ARE-02", "src": "imagenes/aretes/arete2.jpeg", "titulo": "Arete Personalizado – 02" }
+    ]
+  }
